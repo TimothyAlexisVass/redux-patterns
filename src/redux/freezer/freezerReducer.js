@@ -1,4 +1,4 @@
-import { BUY_ICECREAM, RESTOCK_ICECREAM } from './freezerTypes'
+import { SELL_ICECREAM, RESTOCK_ICECREAM } from './freezerTypes'
 
 const initialState = {
   iceCreams: 20
@@ -6,7 +6,7 @@ const initialState = {
 
 const freezerReducer = (state = initialState, action) => {
   switch(action.type) {
-    case BUY_ICECREAM: return {
+    case SELL_ICECREAM: return {
       ...state,
       iceCreams: state.iceCreams - 1
     }

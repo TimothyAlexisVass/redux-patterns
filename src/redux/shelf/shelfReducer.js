@@ -1,4 +1,4 @@
-import { BUY_CAKE } from './shelfTypes'
+import { SELL_CAKE } from './shelfTypes'
 
 const initialState = {
   cakes: 10
@@ -6,7 +6,7 @@ const initialState = {
 
 const shelfReducer = (state = initialState, action) => {
   switch(action.type) {
-    case BUY_CAKE: return {
+    case SELL_CAKE: return {
       ...state,
       cakes: state.cakes - action.payload
     }

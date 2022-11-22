@@ -1,8 +1,8 @@
-import { BUY_CAKE } from './shelfTypes'
+import { SELL_CAKE } from './shelfTypes'
 
-export const buyCake = (number = 1) => {
+export const sellCake = (number = 1) => {
   return {
-    type: BUY_CAKE,
+    type: SELL_CAKE,
     payload: number
   }
 }

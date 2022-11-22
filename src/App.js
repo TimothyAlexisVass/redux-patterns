@@ -4,6 +4,7 @@ import store from './redux/store'
 import './App.css'
 import CakeContainer from './components/CakeContainer'
 import IceCreamContainer from './components/IceCreamContainer'
+import ItemContainer from './components/ItemContainer'
 // import HooksCakeContainer from './components/HooksCakeContainer'
 
 function App() {
@@ -18,6 +19,11 @@ function App() {
         <div className="bordered-box">
           <h1>Freezer</h1>
           <IceCreamContainer />
+        </div>
+        <div className="bordered-box">
+          <h1>UsingItemContainer</h1>
+          <ItemContainer itemType="cake" />
+          <ItemContainer itemType="iceCream" />
         </div>
       </div>
     </Provider>
